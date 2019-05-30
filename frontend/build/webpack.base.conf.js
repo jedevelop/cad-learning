@@ -3,12 +3,12 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
+
 }
-
-
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
@@ -64,9 +64,59 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      }
+      },
+      {
+        test: /\.scss$/,
+        use: [
+         'style-loader',
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+            options: {sourceMap: true}
+          },
+          {
+            loader: 'postcss-loader',
+            options: {sourceMap: true, config: {path: './build/postcss.conf'}}
+          },
+          {
+            loader: 'sass-loader',
+            options: {sourceMap: true}
+          }
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+            options: {sourceMap: true}
+          },
+          {
+            loader: 'postcss-loader',
+            options: {sourceMap: true, config: {path: './build/postcss.conf'}}
+          },
+          {
+            loader: 'sass-loader',
+            options: {sourceMap: true}
+          }
+        ],
+      },
     ]
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: '[name].[contenthash].css',
+      chunkFilename: '[id].css',
+    }),
+  ],
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
     // source contains it (although only uses it if it's native).
