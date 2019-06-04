@@ -1,12 +1,8 @@
 import Vue from 'vue'
 import './plugins/vuetify'
-import App from './App.vue'
 import router from './router'
 import store from './store'
-import Vuetify from 'vuetify'
-Vue.use(Vuetify, {
-  iconfont: 'mdi'
-})
+import App from './App.vue'
 import './assets/scss/index.scss';
 
 Vue.config.productionTip = false

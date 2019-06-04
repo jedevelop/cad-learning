@@ -15,8 +15,12 @@
   },
   "devDependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@fortawesome/fontawesome-free": "^5.8.2",
+    "@mdi/font": "^3.6.95",
     "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-service": "^3.8.0",
+    "font-awesome": "^4.7.0",
+    "material-design-icons-iconfont": "^5.0.1",
     "node-sass": "^4.9.0",
     "postcss-load-config": "^2.0.0",
     "sass-loader": "^7.1.0",

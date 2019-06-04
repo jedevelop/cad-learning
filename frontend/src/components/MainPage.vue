@@ -2,8 +2,9 @@
   <v-app id="inspire">
     <v-toolbar
       absolute
-      color="teal lighten-3"
       dark
+      color="grey darken-3 "
+      height="50px"
       scroll-off-screen
       scroll-target="#scrolling-techniques">
       <v-toolbar-side-icon></v-toolbar-side-icon>
@@ -12,45 +13,35 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
-        <v-icon>search</v-icon>
-      </v-btn>
 
       <v-btn icon>
-        <v-icon>favorite</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>more_vert</v-icon>
+        <i class="fas fa-search"></i>
       </v-btn>
     </v-toolbar>
-    <v-container style="height: calc(100% - 50px);"></v-container>
+    <v-container grid-list-md text-xs-center>
+      <v-layout row wrap>
+        <v-flex xs12>
+          <v-img :src="'../assets/autocad.png'" width="100px" height="200px"/>
+        </v-flex>
+      </v-layout>
+    </v-container>
     <v-footer
       dark
-      height="30px">
+      height="30px"
+    >
       <v-card
-        flat
-        tile
-        class="indigo lighten-1 white--text text-xs-center">
-        <v-card-text>
+        class="flex">
+        <v-card-title class="grey darken-3 align-center justify-center pt-0 pb-0">
+
           <v-btn
             v-for="icon in icons"
             :key="icon"
-            class="mx-3 white--text"
-            icon>
-            <v-icon color="white" size="24px" style="background-color: white">{{ icon }}</v-icon>
+            dark
+            icon
+          >
+            <v-icon size="24px">{{ icon }}</v-icon>
           </v-btn>
-        </v-card-text>
-
-        <v-card-text class="white--text pt-0" style="width: 100px;">
-
-        </v-card-text>
-
-        <v-divider></v-divider>
-
-        <v-card-text class="white--text">
-          &copy;2019 — <strong>Learning CAD</strong>
-        </v-card-text>
+        </v-card-title>
       </v-card>
     </v-footer>
     <router-view/>
@@ -58,6 +49,7 @@
 </template>
 
 <script>
+
   export default {
     name: "MainPage",
     created() {
