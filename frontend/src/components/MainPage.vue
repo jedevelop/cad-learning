@@ -1,6 +1,9 @@
 <template>
   <v-app fluid class="p-0">
-    <v-layout row wrap justify-space-around class="layout-back">
+    <v-layout row wrap justify-space-around class="layout-back" style="min-height:300px">
+      <!--      <span class="headline">Top 10 Australian beaches</span>-->
+      <!--      <h1 class="display-2 font-weight-thin mb-3">Vuetify.js</h1>-->
+      <!--      <h4 class="subheading">Build your application today!</h4>-->
       <v-flex xs6>
         <v-toolbar
           absolute
@@ -22,8 +25,93 @@
       </v-flex>
     </v-layout>
     <v-layout row wrap justify-space-around>
-      <v-flex xs6>
-        <!--        <img src="../assets/autocad.png" height="42%" width="100%"/>-->
+      <v-flex xs3 d-flex align-center class="pa-4">
+        <v-card>
+          <v-img
+            class="white--text"
+            height="200px"
+            src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+          >
+            <v-container fill-height fluid>
+              <v-layout fill-height>
+                <v-flex xs12 align-end flexbox>
+                  <span class="headline">Top 10 Australian beaches</span>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-img>
+          <v-card-title>
+            <div>
+              <span class="grey--text">Number 10</span><br>
+              <span>Whitehaven Beach</span><br>
+              <span>Whitsunday Island, Whitsunday Islands</span>
+            </div>
+          </v-card-title>
+          <v-card-actions>
+            <v-btn flat color="orange">Share</v-btn>
+            <v-btn flat color="orange">Explore</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+      <v-flex xs3 d-flex align-center class="pa-4">
+        <v-card>
+          <v-img
+            class="white--text"
+            height="200px"
+            src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+          >
+            <v-container fill-height fluid>
+              <v-layout fill-height>
+                <v-flex xs12 align-end flexbox>
+                  <span class="headline">Top 10 Australian beaches</span>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-img>
+          <v-card-title>
+            <div>
+              <span class="grey--text">Number 10</span><br>
+              <span>Whitehaven Beach</span><br>
+              <span>Whitsunday Island, Whitsunday Islands</span>
+            </div>
+          </v-card-title>
+          <v-card-actions>
+            <v-btn flat color="orange">Share</v-btn>
+            <v-btn flat color="orange">Explore</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+      <v-flex xs3 d-flex align-center class="pa-4">
+        <v-card>
+          <v-img
+            class="white--text"
+            height="200px"
+            src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+          >
+            <v-container fill-height fluid>
+              <v-layout fill-height>
+                <v-flex xs12 align-end flexbox>
+                  <span class="headline">Top 10 Australian beaches</span>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-img>
+          <v-card-title>
+            <div>
+              <span class="grey--text">Number 10</span><br>
+              <span>Whitehaven Beach</span><br>
+              <span>Whitsunday Island, Whitsunday Islands</span>
+            </div>
+          </v-card-title>
+          <v-card-actions>
+            <v-btn flat color="orange">Share</v-btn>
+            <v-btn flat color="orange">Explore</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+    </v-layout>
+    <v-layout row wrap justify-space-around>
+      <v-flex xs3 d-flex align-center class="pa-4">
       </v-flex>
     </v-layout>
     <v-footer

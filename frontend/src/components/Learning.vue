@@ -10,10 +10,10 @@
       <v-list dense>
         <v-list-tile @click.stop="right = !right">
           <v-list-tile-action>
-            <v-icon>exit_to_app</v-icon>
+            <v-icon>fas fa-sign-out-alt</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Open Temporary Drawer</v-list-tile-title>
+            <v-list-tile-title>Справка</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -26,7 +26,7 @@
       clipped-right
     >
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>Toolbar</v-toolbar-title>
+      <v-toolbar-title>CAD</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-side-icon @click.stop="drawerRight = !drawerRight"></v-toolbar-side-icon>
     </v-toolbar>
@@ -38,10 +38,10 @@
       <v-list dense>
         <v-list-tile @click.stop="left = !left">
           <v-list-tile-action>
-            <v-icon>exit_to_app</v-icon>
+            <v-icon>fas fa-sign-out-alt</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Open Temporary Drawer</v-list-tile-title>
+            <v-list-tile-title>Модули</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -56,6 +56,7 @@
         <v-layout justify-center align-center>
           <v-flex shrink>
 
+
           </v-flex>
         </v-layout>
       </v-container>
@@ -66,25 +67,67 @@
       v-model="right"
       fixed
     ></v-navigation-drawer>
-    <v-footer color="blue-grey" class="white--text" app>
-      <span>Vuetify</span>
-      <v-spacer></v-spacer>
-      <span>&copy; 2017</span>
+    <v-footer
+      dark
+      height="30px"
+    >
+      <v-card
+        class="flex">
+        <v-card-title class="grey darken-3 align-center justify-center pt-0 pb-0">
+
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            dark
+            icon
+          >
+            <v-icon size="24px">{{ icon }}</v-icon>
+          </v-btn>
+        </v-card-title>
+      </v-card>
     </v-footer>
   </v-app>
 </template>
 
 <script>
+
+  import * as THREE from 'three';
+
   export default {
     name: "WebCAD",
     data() {
       return {
         drawer: true,
-        drawerRight: true,
+        drawerRight: false,
         right: null,
-        left: null
+        left: null,
+        scene: {},
+        camera: {},
+        renderer: {},
+        icons: [
+          'fab fa-facebook',
+          'fab fa-twitter',
+          'fab fa-google-plus',
+          'fab fa-linkedin',
+          'fab fa-instagram'
+        ]
       }
     },
+    created() {
+      this.scene = new THREE.Scene();
+      this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+      this.renderer = new THREE.WebGLRenderer();
+      this.renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(this.renderer.domElement);
+
+      let geometry = new THREE.BoxGeometry(1, 1, 1);
+      let material = new THREE.MeshBasicMaterial({color: 0x00ff00});
+      let cube = new THREE.Mesh(geometry, material);
+      this.scene.add(cube);
+
+      camera.position.z = 5;
+    }
   }
 </script>
 
