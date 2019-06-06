@@ -1,30 +1,31 @@
 <template>
-  <v-app id="inspire">
-    <v-toolbar
-      absolute
-      dark
-      color="grey darken-3 "
-      height="50px"
-      scroll-off-screen
-      scroll-target="#scrolling-techniques">
-      <v-toolbar-side-icon></v-toolbar-side-icon>
+  <v-app fluid class="p-0">
+    <v-layout row wrap justify-space-around class="layout-back">
+      <v-flex xs6>
+        <v-toolbar
+          absolute
+          dark
+          color="transparent"
+          height="50px"
+          scroll-off-screen
+          scroll-target="#scrolling-techniques">
+          <!--      <v-toolbar-side-icon></v-toolbar-side-icon>-->
 
-      <v-toolbar-title>LEARNING CAD</v-toolbar-title>
+          <v-toolbar-title>LEARNING CAD</v-toolbar-title>
 
-      <v-spacer></v-spacer>
+          <v-spacer></v-spacer>
 
-
-      <v-btn icon>
-        <i class="fas fa-search"></i>
-      </v-btn>
-    </v-toolbar>
-    <v-container grid-list-md text-xs-center>
-      <v-layout row wrap>
-        <v-flex xs12>
-          <v-img :src="'../assets/autocad.png'" width="100px" height="200px"/>
-        </v-flex>
-      </v-layout>
-    </v-container>
+          <v-btn icon>
+            <i class="fas fa-search"></i>
+          </v-btn>
+        </v-toolbar>
+      </v-flex>
+    </v-layout>
+    <v-layout row wrap justify-space-around>
+      <v-flex xs6>
+        <!--        <img src="../assets/autocad.png" height="42%" width="100%"/>-->
+      </v-flex>
+    </v-layout>
     <v-footer
       dark
       height="30px"
@@ -70,5 +71,9 @@
 </script>
 
 <style scoped>
-
+  .layout-back {
+    background-image: url("../assets/autocad.png");
+    background-size: cover;
+    opacity: .9;
+  }
 </style>

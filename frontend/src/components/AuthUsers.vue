@@ -8,16 +8,18 @@
               <v-toolbar-title>Вход</v-toolbar-title>
               <v-spacer></v-spacer>
               <v-btn flat fab @click="signin">
-                <v-icon title="Войти">check</v-icon>
+                <v-icon title="Войти">fas fa-check</v-icon>
               </v-btn>
               <v-btn flat fab @click="$router.push({path: '/signup'})">
-                <v-icon title="Регистрация">person_add</v-icon>
+                <v-icon title="Регистрация">fas fa-user-plus</v-icon>
               </v-btn>
             </v-toolbar>
             <v-card-text>
               <v-form>
-                <v-text-field prepend-icon="person" name="login" label="Логин" type="text"></v-text-field>
-                <v-text-field prepend-icon="lock" name="password" label="Пароль" id="password"
+                <v-text-field prepend-icon="fas fa-user" name="login" label="Логин / Email" type="text"
+                              v-model="user.email"></v-text-field>
+                <v-text-field name="password" prepend-icon="fas fa-lock" label="Пароль" id="password"
+                              v-model="user.password"
                               type="password"></v-text-field>
               </v-form>
             </v-card-text>
@@ -33,6 +35,7 @@
         </v-flex>
       </v-layout>
     </v-container>
+    <router-view/>
   </v-content>
 </template>
 
@@ -78,7 +81,7 @@
       },
       signin() {
         if (Object.values(this.user).every(_ => _.length)) {
-          this.$router.push({path: '/learning'})
+          this.$router.push({path: '/home'})
         }
       }
     }

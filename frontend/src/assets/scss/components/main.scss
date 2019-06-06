@@ -1,4 +1,11 @@
+@font-face {
+  @import "../../fonts/DancingScript-Bold.ttf";
+  font-family: 'Dancing Script', cursive;
+}
+
 html, body {
+  font-family: 'Dancing Script', cursive;
   //background: #2c3e50;
   //color: red;
 }
+
