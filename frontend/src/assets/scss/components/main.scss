@@ -1,11 +1,16 @@
 @font-face {
-  @import "../../fonts/DancingScript-Bold.ttf";
-  font-family: 'Dancing Script', cursive;
+  @import "../../fonts/Roboto-Regular.ttf";
+  font-family: 'Roboto', sans-serif;
 }
 
 html, body {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Roboto-Regular.ttf', cursive;
   //background: #2c3e50;
   //color: red;
 }
 
+.custom-heading {
+  margin-top: 70px;
+  margin-left: 30px;
+  opacity: .7;
+}

@@ -2,9 +2,9 @@
   <v-app fluid class="p-0">
     <v-layout row wrap justify-space-around class="layout-back" style="min-height:300px">
       <!--      <span class="headline">Top 10 Australian beaches</span>-->
-      <!--      <h1 class="display-2 font-weight-thin mb-3">Vuetify.js</h1>-->
       <!--      <h4 class="subheading">Build your application today!</h4>-->
-      <v-flex xs6>
+      <v-flex xs12>
+        <h1 class="custom-heading">Технологии создания объектов будущего</h1>
         <v-toolbar
           absolute
           dark
@@ -30,12 +30,12 @@
           <v-img
             class="white--text"
             height="200px"
-            src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+            :src="images.cad"
           >
             <v-container fill-height fluid>
               <v-layout fill-height>
                 <v-flex xs12 align-end flexbox>
-                  <span class="headline">Top 10 Australian beaches</span>
+                  <span class="headline">CAD</span>
                 </v-flex>
               </v-layout>
             </v-container>
@@ -48,8 +48,7 @@
             </div>
           </v-card-title>
           <v-card-actions>
-            <v-btn flat color="orange">Share</v-btn>
-            <v-btn flat color="orange">Explore</v-btn>
+            <v-btn flat color="orange">Перейти</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -58,12 +57,12 @@
           <v-img
             class="white--text"
             height="200px"
-            src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+            :src="images.cae"
           >
             <v-container fill-height fluid>
               <v-layout fill-height>
                 <v-flex xs12 align-end flexbox>
-                  <span class="headline">Top 10 Australian beaches</span>
+                  <span class="headline">CAE</span>
                 </v-flex>
               </v-layout>
             </v-container>
@@ -76,8 +75,7 @@
             </div>
           </v-card-title>
           <v-card-actions>
-            <v-btn flat color="orange">Share</v-btn>
-            <v-btn flat color="orange">Explore</v-btn>
+            <v-btn flat color="orange">Перейти</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -86,12 +84,12 @@
           <v-img
             class="white--text"
             height="200px"
-            src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+            :src="images.cloud"
           >
             <v-container fill-height fluid>
               <v-layout fill-height>
                 <v-flex xs12 align-end flexbox>
-                  <span class="headline">Top 10 Australian beaches</span>
+                  <span class="headline">Облачные вычисления</span>
                 </v-flex>
               </v-layout>
             </v-container>
@@ -104,8 +102,7 @@
             </div>
           </v-card-title>
           <v-card-actions>
-            <v-btn flat color="orange">Share</v-btn>
-            <v-btn flat color="orange">Explore</v-btn>
+            <v-btn flat color="orange">Перейти</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -152,7 +149,12 @@
           'fab fa-google-plus',
           'fab fa-linkedin',
           'fab fa-instagram'
-        ]
+        ],
+        images: {
+          cad: require('../assets/cad.jpg'),
+          cae: require('../assets/cae.webp'),
+          cloud: require('../assets/cloud.jpg')
+        }
       }
     }
   }

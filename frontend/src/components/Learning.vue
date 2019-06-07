@@ -55,8 +55,9 @@
       <v-container fluid fill-height>
         <v-layout justify-center align-center>
           <v-flex shrink>
-
-
+            <div id="container">
+              sdfdsfdsfd
+            </div>
           </v-flex>
         </v-layout>
       </v-container>
@@ -125,8 +126,9 @@
       let material = new THREE.MeshBasicMaterial({color: 0x00ff00});
       let cube = new THREE.Mesh(geometry, material);
       this.scene.add(cube);
+      this.renderer.setClearColor(new THREE.Color(0xEEEEEE, 1.0));
 
-      camera.position.z = 5;
+      this.camera.position.z = 5;
     }
   }
 </script>
