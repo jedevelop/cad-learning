@@ -22,6 +22,7 @@
     "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-service": "^3.8.0",
     "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
     "material-design-icons-iconfont": "^5.0.1",
     "node-sass": "^4.9.0",
     "postcss-load-config": "^2.0.0",

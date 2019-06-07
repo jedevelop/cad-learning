@@ -7,6 +7,7 @@ import './assets/scss/index.scss';
 // import VueThreejs from 'vue-threejs'
 // Vue.use(VueThreejs)
 
+
 Vue.config.productionTip = false
 
 new Vue({
