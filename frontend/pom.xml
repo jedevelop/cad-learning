@@ -29,7 +29,7 @@
               <goal>install-node-and-npm</goal>
             </goals>
             <configuration>
-              <nodeVersion>v11.14.0</nodeVersion>
+              <nodeVersion>v10.13.0</nodeVersion>
             </configuration>
           </execution>
           <execution>
@@ -43,12 +43,12 @@
             </configuration>
           </execution>
           <execution>
-            <id>npm run build</id>
+            <id>npm run serve</id>
             <goals>
               <goal>npm</goal>
             </goals>
             <configuration>
-              <arguments>run build</arguments>
+              <arguments>run serve</arguments>
             </configuration>
           </execution>
         </executions>
