@@ -9,7 +9,8 @@ import java.util.ArrayList;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("auth")
+@ResponseBody
 public class BackendController {
     private int counter = 4;
     private List<Map<String, String>> messages = new ArrayList<Map<String, String>>() {{

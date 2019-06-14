@@ -17,7 +17,7 @@
             <v-card-text>
               <v-form>
                 <v-text-field prepend-icon="fas fa-user" name="login" label="Логин / Email" type="text"
-                              v-model="user.email"></v-text-field>
+                              v-model="user.text"></v-text-field>
                 <v-text-field name="password" prepend-icon="fas fa-lock" label="Пароль" id="password"
                               v-model="user.password"
                               type="password"></v-text-field>
@@ -40,13 +40,15 @@
 </template>
 
 <script>
+  import {LOGIN_REQUEST} from "../store/modules/auth/consts";
+
   export default {
     name: 'HelloWorld',
     data: () => ({
       valid: true,
       user: {
-        email: '',
-        password: ''
+        text: '',
+        // password: ''
       },
       nameRules: [
         v => !!v || 'Name is required',
@@ -80,9 +82,10 @@
         this.$refs.form.resetValidation()
       },
       signin() {
-        if (Object.values(this.user).every(_ => _.length)) {
-          this.$router.push({path: '/home'})
-        }
+        // if (Object.values(this.user).every(_ => _.length)) {
+        //   this.$router.push({path: '/home'})
+        // }
+        this.$store.dispatch('LOGIN_REQUEST', this.user)
       }
     }
   }
