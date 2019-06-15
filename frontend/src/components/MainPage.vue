@@ -151,9 +151,12 @@
           'fab fa-instagram'
         ],
         images: {
-          cad: require('../assets/cad.jpg'),
-          cae: require('../assets/cae.webp'),
-          cloud: require('../assets/cloud.jpg')
+          cad: '',
+          cae: '',
+          cloud: ''
+          // cad: require('../assets/cad.jpg'),
+          // cae: require('../assets/cae.webp'),
+          // cloud: require('../assets/cloud.jpg')
         }
       }
     }
