@@ -1,3 +1,3 @@
-/home/mihail/Projects/cad-learning/backend/src/main/java/com/learningcad/backend/BackendApplication.java
-/home/mihail/Projects/cad-learning/backend/src/main/java/com/learningcad/backend/controllers/BackendController.java
-/home/mihail/Projects/cad-learning/backend/src/main/java/com/learningcad/backend/exceptions/NotFoundException.java
+/home/user/IdeaProjects/cad-learning/backend/src/main/java/com/learningcad/backend/controllers/BackendController.java
+/home/user/IdeaProjects/cad-learning/backend/src/main/java/com/learningcad/backend/exceptions/NotFoundException.java
+/home/user/IdeaProjects/cad-learning/backend/src/main/java/com/learningcad/backend/BackendApplication.java
