@@ -2,27 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="466041a0-0d34-4f7b-afb3-cfbdd6428802" name="Default Changelist" comment="build scene">
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/modules/auth/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/modules/auth/consts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/modules/auth/getters.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/modules/auth/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/modules/auth/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/cad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/cae.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/scss/components/learning.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/learningcad/backend/controllers/BackendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/learningcad/backend/controllers/BackendController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/backend-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/backend-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/learningcad/backend/BackendApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/learningcad/backend/BackendApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/learningcad/backend/controllers/BackendController$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/learningcad/backend/controllers/BackendController$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/learningcad/backend/controllers/BackendController$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/learningcad/backend/controllers/BackendController$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/learningcad/backend/controllers/BackendController$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/learningcad/backend/controllers/BackendController$1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/learningcad/backend/controllers/BackendController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/learningcad/backend/controllers/BackendController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/classes/com/learningcad/backend/controllers/BackendController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/learningcad/backend/controllers/BackendController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/surefire-reports/TEST-com.learningcad.backend.BackendApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/surefire-reports/com.learningcad.backend.BackendApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/api/auth/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/auth/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/api/base/HttpClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/base/HttpClient.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/AuthUsers.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AuthUsers.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/scss/helpers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/scss/helpers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Learning.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Learning.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,12 +43,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/learningcad/backend/BackendApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+            <state relative-caret-position="408">
+              <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,61 +57,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/learningcad/backend/controllers/BackendController.java">
+        <entry file="file://$PROJECT_DIR$/frontend/src/components/Learning.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="116">
+              <caret line="410" column="14" selection-start-line="410" selection-start-column="14" selection-end-line="410" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/components/AuthUsers.vue">
+        <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/helpers.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="439">
+              <caret line="326" column="16" selection-start-line="326" selection-start-column="16" selection-end-line="326" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/store/modules/auth/actions.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/components/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#226#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/api/auth/Auth.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="17">
+              <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/api/base/HttpClient.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/components/learning.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="46" column="55" lean-forward="true" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
+            <state relative-caret-position="150">
+              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -129,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -138,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -147,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/dist/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+              <caret column="32" selection-start-column="32" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -158,23 +134,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="SCSS File" />
         <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rules</find>
-      <find>outp</find>
-      <find>extractTextPlugin</find>
-      <find>bonjour</find>
-      <find>bon</find>
-      <find>.src</find>
-      <find>cleanwe</find>
-      <find>htmlwe</find>
-      <find>bonj</find>
       <find>src</find>
       <find>data</find>
       <find>&lt;v-ico</find>
@@ -185,6 +152,26 @@
       <find>11</find>
       <find>8080</find>
       <find>axiosInstan</find>
+      <find>selectModule</find>
+      <find>Vue</find>
+      <find>CAD</find>
+      <find>Выберите</find>
+      <find>title</find>
+      <find>main-container</find>
+      <find>{{title}}</find>
+      <find>buttons</find>
+      <find>items</find>
+      <find>{{to</find>
+      <find>clicl</find>
+      <find>mounte</find>
+      <find>sphere</find>
+      <find>{{t</find>
+      <find>mini</find>
+      <find>actions</find>
+      <find>setAction</find>
+      <find>render</find>
+      <find>stop</find>
+      <find>setActionUser</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -217,19 +204,16 @@
         <option value="$PROJECT_DIR$/frontend/src/api/auth/auth.js" />
         <option value="$PROJECT_DIR$/frontend/postcss.config.js" />
         <option value="$PROJECT_DIR$/frontend/.babelrc" />
-        <option value="$PROJECT_DIR$/frontend/src/assets/scss/helpers.scss" />
         <option value="$PROJECT_DIR$/frontend/src/App.vue" />
         <option value="$PROJECT_DIR$/frontend/src/components/WebCAD.vue" />
         <option value="$PROJECT_DIR$/frontend/src/components/main/footer.vue" />
         <option value="$PROJECT_DIR$/frontend/src/plugins/vuetify.js" />
         <option value="$PROJECT_DIR$/frontend/src/components/SignUp.vue" />
-        <option value="$PROJECT_DIR$/frontend/src/assets/scss/index.scss" />
         <option value="$PROJECT_DIR$/frontend/src/components/MainPage.vue" />
         <option value="$PROJECT_DIR$/frontend/src/assets/scss/components/main.scss" />
         <option value="$PROJECT_DIR$/frontend/src/components/Test.vue" />
         <option value="$PROJECT_DIR$/frontend/src/router.js" />
         <option value="$PROJECT_DIR$/frontend/src/main.js" />
-        <option value="$PROJECT_DIR$/frontend/src/components/Learning.vue" />
         <option value="$PROJECT_DIR$/backend/pom.xml" />
         <option value="$PROJECT_DIR$/frontend/pom.xml" />
         <option value="$PROJECT_DIR$/frontend/src/store/index.js" />
@@ -243,6 +227,10 @@
         <option value="$PROJECT_DIR$/backend/src/main/java/com/learningcad/backend/controllers/BackendController.java" />
         <option value="$PROJECT_DIR$/frontend/src/components/AuthUsers.vue" />
         <option value="$PROJECT_DIR$/frontend/src/api/base/HttpClient.js" />
+        <option value="$PROJECT_DIR$/frontend/src/assets/scss/index.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/assets/scss/helpers.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/assets/scss/components/learning.scss" />
+        <option value="$PROJECT_DIR$/frontend/src/components/Learning.vue" />
       </list>
     </option>
   </component>
@@ -270,7 +258,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -337,10 +324,48 @@
               <item name="cad-learning" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="cad-learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cad-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cad-learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cad-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cad-learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cad-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cad-learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cad-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cad-learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cad-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -431,7 +456,8 @@
       <workItem from="1559840985820" duration="614000" />
       <workItem from="1559891043498" duration="9409000" />
       <workItem from="1560440851829" duration="4191000" />
-      <workItem from="1560528985003" duration="3838000" />
+      <workItem from="1560528985003" duration="3954000" />
+      <workItem from="1560747175717" duration="9333000" />
     </task>
     <task id="LOCAL-00001" summary="sass">
       <created>1559248937353</created>
@@ -482,11 +508,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560444942965</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="build scene">
+      <created>1560532836239</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1560532836239</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89115000" />
+    <option name="totallyTimeSpent" value="98564000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -501,7 +534,7 @@
     <frame x="1920" y="25" width="1920" height="990" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4975728" visible="true" weight="0.34951973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4975728" visible="true" weight="0.35378867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -517,7 +550,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329849" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32868758" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.37979093" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.37979093" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32899022" />
@@ -555,31 +588,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" />
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/vuetify/src/stylus/app.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/helpers.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="324" lean-forward="true" selection-start-line="324" selection-end-line="324" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/main/footer.vue" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/assets/logo.png" />
     <entry file="file://$PROJECT_DIR$/frontend/src/assets/logo.svg" />
-    <entry file="file://$PROJECT_DIR$/frontend/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/plugins/vuetify.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -597,25 +606,11 @@
     <entry file="file://$PROJECT_DIR$/node_modules/vue-threejs/lib/VueThreejs.common.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/assets/cloud.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/assets/cae.webp">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/components/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="file:///media/mihail/UBUNTU 18_0/three.js/editor/index.html" />
     <entry file="file://$PROJECT_DIR$/frontend/src/three.js/build/three.module.js" />
@@ -627,23 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="17933" column="43" lean-forward="true" selection-start-line="17933" selection-start-column="43" selection-end-line="17933" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Learning.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2711">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -695,16 +673,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/store.js" />
     <entry file="file://$PROJECT_DIR$/frontend/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -766,13 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -780,30 +742,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/pom.xml">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/learningcad/backend/controllers/BackendController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="46" column="55" lean-forward="true" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
+        <state relative-caret-position="136">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/AuthUsers.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/store/modules/auth/actions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="306">
           <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
           <folding>
             <element signature="e#0#226#0" expanded="true" />
@@ -818,23 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/learningcad/backend/BackendApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/AuthUsers.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/api/base/HttpClient.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -842,13 +783,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/learningcad/backend/controllers/BackendController.java">
+    <entry file="file://$PROJECT_DIR$/backend/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.6.RELEASE/spring-context-5.1.6.RELEASE.jar!/org/springframework/context/annotation/Bean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/learningcad/backend/BackendApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/components/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/three/src/lights/SpotLight.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/components/learning.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/assets/scss/helpers.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="326" column="16" selection-start-line="326" selection-start-column="16" selection-end-line="326" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/node/node_modules/npm/lib/install/diff-trees.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="176" column="9" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Learning.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="410" column="14" selection-start-line="410" selection-start-column="14" selection-end-line="410" selection-end-column="14" />
         </state>
       </provider>
     </entry>
