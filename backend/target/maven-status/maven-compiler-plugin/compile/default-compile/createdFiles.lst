@@ -1,7 +1,9 @@
 com/learningcad/backend/controllers/BackendController$1$2.class
 com/learningcad/backend/controllers/BackendController.class
+com/learningcad/backend/repos/UserRepository.class
 com/learningcad/backend/controllers/BackendController$1.class
 com/learningcad/backend/exceptions/NotFoundException.class
 com/learningcad/backend/controllers/BackendController$1$1.class
 com/learningcad/backend/controllers/BackendController$1$3.class
+com/learningcad/backend/domain/User.class
 com/learningcad/backend/BackendApplication.class
