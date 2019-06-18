@@ -14,7 +14,7 @@
           scroll-target="#scrolling-techniques">
           <!--      <v-toolbar-side-icon></v-toolbar-side-icon>-->
 
-          <v-toolbar-title>LEARNING CAD</v-toolbar-title>
+<!--          <v-toolbar-title>LEARNING CAD</v-toolbar-title>-->
 
           <v-spacer></v-spacer>
 
@@ -42,9 +42,9 @@
           </v-img>
           <v-card-title>
             <div>
-              <span class="grey--text">Number 10</span><br>
-              <span>Whitehaven Beach</span><br>
-              <span>Whitsunday Island, Whitsunday Islands</span>
+              <span class="grey--text">January 10</span><br>
+              <span>CAD</span><br>
+<!--              <span>Whitsunday Island, Whitsunday Islands</span>-->
             </div>
           </v-card-title>
           <v-card-actions>
@@ -62,16 +62,16 @@
             <v-container fill-height fluid>
               <v-layout fill-height>
                 <v-flex xs12 align-end flexbox>
-                  <span class="headline">CAE</span>
+                  <span class="headline custom-color"></span>
                 </v-flex>
               </v-layout>
             </v-container>
           </v-img>
           <v-card-title>
             <div>
-              <span class="grey--text">Number 10</span><br>
-              <span>Whitehaven Beach</span><br>
-              <span>Whitsunday Island, Whitsunday Islands</span>
+              <span class="grey--text">June 25</span><br>
+              <span>CAE</span><br>
+<!--              <span>Whitsunday Island, Whitsunday Islands</span>-->
             </div>
           </v-card-title>
           <v-card-actions>
@@ -89,16 +89,16 @@
             <v-container fill-height fluid>
               <v-layout fill-height>
                 <v-flex xs12 align-end flexbox>
-                  <span class="headline">Облачные вычисления</span>
+                  <span class="headline"></span>
                 </v-flex>
               </v-layout>
             </v-container>
           </v-img>
           <v-card-title>
             <div>
-              <span class="grey--text">Number 10</span><br>
-              <span>Whitehaven Beach</span><br>
-              <span>Whitsunday Island, Whitsunday Islands</span>
+              <span class="grey--text">May 22</span><br>
+              <span>Облачные вычисления</span><br>
+<!--              <span>Whitsunday Island, Whitsunday Islands</span>-->
             </div>
           </v-card-title>
           <v-card-actions>
@@ -151,12 +151,12 @@
           'fab fa-instagram'
         ],
         images: {
-          cad: '',
-          cae: '',
-          cloud: ''
-          // cad: require('../assets/cad.jpg'),
-          // cae: require('../assets/cae.webp'),
-          // cloud: require('../assets/cloud.jpg')
+          // cad: '',
+          // cae: '',
+          // cloud: ''
+          cad: require('../assets/cad.jpg'),
+          cae: require('../assets/cae.webp'),
+          cloud: require('../assets/cloud.jpg')
         }
       }
     }
@@ -168,5 +168,9 @@
     background-image: url("../assets/autocad.png");
     background-size: cover;
     opacity: .9;
+  }
+
+  .custom-color {
+    color: gray !important;
   }
 </style>

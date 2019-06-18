@@ -341,7 +341,11 @@
     mounted() {
 
       this.scene = new THREE.Scene();
-      this.camera = new THREE.PerspectiveCamera(25, window.innerWidth / window.innerHeight, 0.1, 1000);
+      this.camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 3000);
+      this.DEFAULT_CAMERA = new THREE.PerspectiveCamera(50, 1, 0.01, 1000);
+      this.DEFAULT_CAMERA.name = 'Camera';
+      this.DEFAULT_CAMERA.position.set(0, 5, 10);
+      this.DEFAULT_CAMERA.lookAt(new THREE.Vector3());
 
       this.renderer = new THREE.WebGLRenderer({alpha: true});
       this.renderer.setSize(window.innerWidth, window.innerHeight);
@@ -349,18 +353,17 @@
       document.body.appendChild(this.renderer.domElement);
 
       this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
-      // this.dIn = dollyIn;
       this.controls.enableDamping = true
       this.controls.dampingFactor = 0.25
       this.controls.enableZoom = true
 
       this.scene.add(new THREE.GridHelper(10, 10));
-
-      const pointsGeom = new THREE.Geometry();
-      pointsGeom.vertices.push(
-        new THREE.Vector3(THREE.Math.randFloat(-5, 5), THREE.Math.randFloat(-2.5, 2.5), THREE.Math.randFloat(-5, 5)),
-        new THREE.Vector3(THREE.Math.randFloat(-5, 5), THREE.Math.randFloat(-2.5, 2.5), THREE.Math.randFloat(-5, 5))
-      )
+      //
+      // const pointsGeom = new THREE.Geometry();
+      // pointsGeom.vertices.push(
+      //   new THREE.Vector3(THREE.Math.randFloat(-5, 5), THREE.Math.randFloat(-2.5, 2.5), THREE.Math.randFloat(-5, 5)),
+      //   new THREE.Vector3(THREE.Math.randFloat(-5, 5), THREE.Math.randFloat(-2.5, 2.5), THREE.Math.randFloat(-5, 5))
+      // )
 
       const axes = new THREE.AxesHelper(20);
       this.scene.add(axes);
