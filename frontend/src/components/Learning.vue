@@ -165,6 +165,7 @@
 <script>
 
   import * as THREE from 'three';
+  import * as OrbitControls from 'three-orbitcontrols';
   import $ from 'jquery'
 
   export default {
@@ -192,7 +193,7 @@
             title: 'Создать',
             actions: [
               {
-                title: 'Ящик',
+                title: 'Куб',
                 action: 'box'
               },
               {
@@ -282,6 +283,8 @@
         camera: {},
         mesh: {},
         cube: {},
+        dIn: {},
+        controls: {},
         geometry: {},
         material: {},
         renderer: {},
@@ -338,28 +341,41 @@
     mounted() {
 
       this.scene = new THREE.Scene();
-      this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      this.camera = new THREE.PerspectiveCamera(25, window.innerWidth / window.innerHeight, 0.1, 1000);
 
       this.renderer = new THREE.WebGLRenderer({alpha: true});
       this.renderer.setSize(window.innerWidth, window.innerHeight);
       this.renderer.shadowMap.enabled = true;
       document.body.appendChild(this.renderer.domElement);
 
+      this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
+      // this.dIn = dollyIn;
+      this.controls.enableDamping = true
+      this.controls.dampingFactor = 0.25
+      this.controls.enableZoom = true
+
+      this.scene.add(new THREE.GridHelper(10, 10));
+
+      const pointsGeom = new THREE.Geometry();
+      pointsGeom.vertices.push(
+        new THREE.Vector3(THREE.Math.randFloat(-5, 5), THREE.Math.randFloat(-2.5, 2.5), THREE.Math.randFloat(-5, 5)),
+        new THREE.Vector3(THREE.Math.randFloat(-5, 5), THREE.Math.randFloat(-2.5, 2.5), THREE.Math.randFloat(-5, 5))
+      )
 
       const axes = new THREE.AxesHelper(20);
       this.scene.add(axes);
 
 
-      const planeGeometry = new THREE.PlaneGeometry(60, 20, 1, 1);
-      const planeMaterial = new THREE.MeshLambertMaterial(
-        {color: 0xffffff});
-      const plane = new THREE.Mesh(planeGeometry, planeMaterial);
-      plane.receiveShadow = true;
-      plane.rotation.x = -0.5 * Math.PI;
-      plane.position.x = 15;
-      plane.position.y = 0;
-      plane.position.z = 0;
-      this.scene.add(plane);
+      // const planeGeometry = new THREE.PlaneGeometry(60, 20, 1, 1);
+      // const planeMaterial = new THREE.MeshLambertMaterial(
+      //   {color: 0xffffff});
+      // const plane = new THREE.Mesh(planeGeometry, planeMaterial);
+      // plane.receiveShadow = true;
+      // plane.rotation.x = -0.5 * Math.PI;
+      // plane.position.x = 15;
+      // plane.position.y = 0;
+      // plane.position.z = 0;
+      // this.scene.add(plane);
 
       const cubeGeometry = new THREE.CubeGeometry(4, 4, 4);
       const cubeMaterial = new THREE.MeshLambertMaterial(
@@ -372,14 +388,14 @@
       this.scene.add(this.cube);
 
 
-      const sphereGeometry = new THREE.SphereGeometry(4, 20, 20);
+      const sphereGeometry = new THREE.SphereGeometry(2, 20, 20);
       const sphereMaterial = new THREE.MeshLambertMaterial(
         {color: 0x7777ff});
       this.sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
       this.sphere.castShadow = true;
-      this.sphere.position.x = 20;
-      this.sphere.position.y = 4;
-      this.sphere.position.z = 2;
+      this.camera.position.x = -2;
+      this.camera.position.y = 0;
+      this.camera.position.z = 0;
       this.scene.add(this.sphere);
 
 
@@ -407,6 +423,16 @@
       // this.render();
 
 
+      window.onscroll = (e) => {
+        const zoomDistance = Number(zoomer.value),
+          currDistance = camera.position.length(),
+          factor = zoomDistance / currDistance;
+
+        camera.position.x *= factor;
+        camera.position.y *= factor;
+        camera.position.z *= factor;
+      };
+
     },
     methods: {
       setActionUser(title) {
@@ -416,7 +442,27 @@
             break
           case 'stop':
             cancelAnimationFrame(this.renderId);
-            break
+            break;
+          case 'box':
+            const cubeGeometry = new THREE.CubeGeometry(4, 4, 4),
+              cubeMaterial = new THREE.MeshLambertMaterial(
+                {color: 0xff0000}),
+              cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+            cube.castShadow = true;
+            cube.position.x = -4;
+            cube.position.y = 3;
+            cube.position.z = 0;
+            console.log(cube, 'cube')
+            this.scene.add(cube);
+            break;
+          case 'sphere' :
+            break;
+          case 'cylinder':
+            break;
+          case 'cone':
+            break;
+          case 'torus':
+            break;
           default:
             break
         }
