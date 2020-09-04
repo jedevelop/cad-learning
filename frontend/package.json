@@ -27,7 +27,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "material-design-icons-iconfont": "^5.0.1",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.1",
     "postcss-load-config": "^2.0.0",
     "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
